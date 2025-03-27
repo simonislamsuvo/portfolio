@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>home - Simon Bootstrap</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center light-background sticky-top">
+    <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+
+        <h1 class="sitename">Simon</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li class="dropdown"><a href="#"><span>More</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="education.html">Education</a></li>
+              <li><a href="experiences.html">Experiences</a></li>
+              <li><a href="extracurricular.html">Extracurricular Activities</a></li>
+              <li><a href="hobbies-interest.html">Hobbies & Interests</a></li>
+              <li><a href="references.html">References</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <div class="header-social-links">
+        <a href="https://x.com/" class="twitter"><i class="bi bi-twitter-x"></i></a>
+        <a href="https://www.facebook.com/uwusimonuwu/" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.linkedin.com/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      </div>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+
+      <img src="assets/img/profile-bg.jpg" alt="" data-aos="fade-in">
+
+      <div class="container text-center" data-aos="zoom-out" data-aos-delay="100">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="blur-box">
+                    <h2 style="color: black;">Md. Simon Islam Suvo</h2>
+                    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+                    <style>
+                        .typed-cursor {
+                            font-size: 24px;
+                            color: #34b7a7;
+                        }
+                        #typed {
+                            color: black;
+                        }
+                        .string_color {
+                            color: #34b7a7;
+                        }
+                        .blur-box {
+                            background: rgba(255, 255, 255, 0.2);
+                            backdrop-filter: blur(3px);
+                            padding: 10px;
+                            border-radius: 20px;
+                            display: block;
+                            width: 75%; /* You can adjust this value */
+                            height: 200px; /* You can adjust this value */
+                            margin: 0 auto; /* Centers the box */
+                        }
+                        .btn-get-started {
+                            display: inline-block;
+                            margin-top: 5px;
+                            padding: 5px 5px;
+                            color: white;
+                            background-color: #34b7a7;
+                            border-radius: 10px;
+                            text-decoration: none;
+                            transition: 0.3s;
+                        }
+                        .btn-get-started:hover {
+                            background-color: #2a9b8d;
+                        }
+                    </style>
+    
+                    <p style="color: black;">I'm <span id="typed"></span></p>
+                    <script>
+                        var typed = new Typed("#typed", {
+                            strings: [
+                                '<span class="string_color">STUDENT</span>, curious, dedicated, always learning.',
+                                '<span class="string_color">LEARNER</span>, always seeking knowledge and growth.',
+                                '<span class="string_color">AMBITIOUS</span>, driven by passion to achieve greatness.',
+                                '<span class="string_color">DETERMINED</span>, never gives up, stays focused.'
+                            ],
+                            typeSpeed: 50,
+                            backSpeed: 25,
+                            backDelay: 1000,
+                            loop: true
+                        });
+                    </script>
+                    <a href="about.html" class="btn-get-started">About Me</a>
+                </div>
+            </div>
+        </div>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+  </main>
+
+  <footer id="footer" class="footer light-background">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Simon</strong> <span>All Rights Reserved<br></span></p>
+      </div>
+      <div class="social-links d-flex justify-content-center">
+        <a href="https://x.com/" class="twitter"><i class="bi bi-twitter-x"></i></a>
+        <a href="https://www.facebook.com/uwusimonuwu/" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.linkedin.com/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

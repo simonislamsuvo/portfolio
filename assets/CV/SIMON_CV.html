@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Md. Simon Islam Suvo - CV</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: white;
+            color: #fff;
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .cv-container {
+            width: 100%;
+            display: flex;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 0px;
+            color: #333;
+        }
+
+        .left-column {
+            width: 30%;
+            background-color: #e6e6fa;
+            padding-top: 30px;
+            padding-right: 20px;
+            padding-left: 20px; /* Adjusted padding for better alignment */
+            text-align: center;
+        }
+
+        .right-column {
+            width: 70%;
+            padding-top: 20px;
+            padding-right: 20px;
+            padding-left: 20px;
+            position: relative;  
+        }
+
+        .profile-img {
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            margin-bottom: 5px;
+            border: 6px solid #6a1b9a 
+        }
+
+        h1 {
+            font-size: 2.3rem;
+            color: #6a1b9a;
+            margin-bottom: 10px;
+        }
+
+        .contact-info {
+            font-size: 1.2rem;
+            color: #555;
+            margin-top: 10px;
+        }
+
+        .contact-info span {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .section-title {
+            font-size: 1.6rem;
+            color: #6a1b9a;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-weight: bold;
+            border-bottom: 5px solid #6a1b9a;
+            padding-bottom: 5px;
+        }
+
+        .skills {
+            text-align: left;
+            margin-top: 20px;
+        }
+
+        .skill-bar {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .skill-name {
+            flex: 1;
+            font-size: 1.1rem;
+        }
+
+        .skill-circles {
+            display: flex;
+            margin-left: 20px;
+        }
+
+        .skill-circle {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            border: 3px solid #6a1b9a;
+            margin-right: 5px;
+            position: relative;
+            background-color: transparent;
+        }
+
+        .filled {
+            background-color: #6a1b9a;
+        }
+
+        .half-filled {
+            background: linear-gradient(to right, #6a1b9a 50%, transparent 50%);
+        }
+
+        .section-content {
+            font-size: 1.1rem;
+            margin-bottom: 25px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        table th, table td {
+            border: 2px solid #ddd;
+            padding: 12px;
+            text-align: center;
+            font-size: 1rem;
+        }
+
+        table th {
+            background-color: #e6e6fa;
+;
+        }
+
+        ul {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+
+        ul li {
+            margin: 5px 0;
+            font-size: 1.1rem;
+        }
+
+        .references {
+            margin-bottom: 50px; 
+        }
+
+        .hobbies ul, .languages ul, .extracurricular ul {
+            list-style-type: none;
+            padding-left: 20px; 
+        }
+
+        .hobbies ul li, .languages ul li, .extracurricular ul li{
+            position: relative;
+        }
+
+        .hobbies ul li::before, .languages ul li::before {
+            content: "";
+            position: absolute;
+            left: -25px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 12px;
+            height: 12px;
+            background-color: #6a1b9a;
+        }
+
+        .extracurricular ul li::before {
+            content: "";
+            position: absolute;
+            left: -25px;
+            top: 25%;
+            transform: translateY(-50%);
+            width: 12px;
+            height: 12px;
+            background-color: #6a1b9a; 
+        }
+
+        .acknowledgment p {
+            font-style: italic;
+            color: #666;
+            margin-top: 20px;
+        }
+
+        .signature-img {
+            width: 200px;  
+            height: auto;
+            border-bottom: 2px solid #6a1b9a;  
+            padding-top: 1px;
+            margin-top: 10px;
+        }
+
+        .hobbies, .languages, .extracurricular {
+            text-align: left;
+        }
+
+        .signature {
+            position: relative;
+            padding-right: 20px;
+            padding-left: 20px;
+            bottom: 20px; 
+            right: 0;
+            width: 100%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="cv-container">
+        <!-- Left Column -->
+        <div class="left-column">
+            <img src="CV Photo.jpg" alt="Profile Picture" class="profile-img">
+            <h1 style = "font-family: Arial, Helvetica, sans-serif;">Md. Simon Islam Suvo</h1>
+            <div class="contact-info">
+                <span>📞 +8801770-341148</span>
+                <span>📧 simonislamsuvo@gmail.com</span>
+                <span>🌐 www.simonislamsuvo.com</span>
+                <span>📍 Bagerhat, Khulna, Bangladesh</span>
+            </div>
+
+            <section class="skills">
+                <h2 class="section-title">Skills</h2>
+                <div class="skill-bar">
+                    <div class="skill-name">Electronics</div>
+                    <div class="skill-circles">
+                        <div class="skill-circle filled"></div>
+                        <div class="skill-circle filled"></div>
+                        <div class="skill-circle filled"></div>
+                        <div class="skill-circle half-filled"></div>
+                        <div class="skill-circle"></div>
+                    </div>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-name">Programming</div>
+                    <div class="skill-circles">
+                        <div class="skill-circle filled"></div>
+                        <div class="skill-circle filled"></div>
+                        <div class="skill-circle filled"></div>
+                        <div class="skill-circle"></div>
+                        <div class="skill-circle"></div>
+                    </div>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-name">Communication</div>
+                    <div class="skill-circles">
+                        <div class="skill-circle filled"></div>
+                        <div class="skill-circle filled"></div>
+                        <div class="skill-circle filled"></div>
+                        <div class="skill-circle filled"></div>
+                        <div class="skill-circle half-filled"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="hobbies">
+                <h2 class="section-title">Interests & Hobbies</h2>
+                <ul>
+                    <li>Coding</li>
+                    <li>Photography</li>
+                    <li>Traveling</li>
+                </ul>
+            </section>
+
+            <section class="languages">
+                <h2 class="section-title">Languages</h2>
+                <ul>
+                    <li>Bangla - Native</li>
+                    <li>English - Fluent</li>
+                    <li>Hindi - Fluent</li>
+                </ul>
+            </section>
+
+            <section class="extracurricular">
+                <h2 class="section-title">Extracurricular Activities</h2>
+                <ul>
+                    <li>Volunteer at Different Events in Both Department and University </li>
+                    <li>Took Part and Own Prizes in University Sports Events </li>
+                </ul>
+            </section>
+        </div>
+
+        <!-- Right Column -->
+        <div class="right-column">
+            <section class="about">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-content">I am an Electronics and Telecommunication Engineering student with a passion for developing impactful technologies and solutions. I aim to bring innovation and creativity to the field of electronics.</p>
+            </section>
+
+            <section class="education">
+                <h2 class="section-title">Educational Qualification</h2>
+                <table>
+                    <tr>
+                        <th>Degree</th>
+                        <th>Year</th>
+                        <th>Institution</th>
+                        <th style="width: 120px;">Result</th>
+                    </tr>
+                    <tr>
+                        <td>B.Sc. in Electronics and Telecommunication Engineering</td>
+                        <td>Ongoing</td>
+                        <td>Rajshahi University of Engineering and Technology</td>
+                        <td>CGPA: 3.86</td>
+                    </tr>
+                    <tr>
+                        <td>HSC</td>
+                        <td>2021</td>
+                        <td>Cantonment College Jashore</td>
+                        <td>GPA: 5.00</td>
+                    </tr>
+                    <tr>
+                        <td>SSC</td>
+                        <td>2019</td>
+                        <td>Police Line Secondary School, Jashore</td>
+                        <td>GPA: 5.00</td>
+                    </tr>
+                </table>
+            </section>
+
+            <section class="experience">
+                <h2 class="section-title">Experience</h2>
+                <ul>
+                    <li>Serving As Class Representative for Almost One and a Half Years</li>
+                </ul>
+            </section>
+
+            <section class="projects">
+                <h2 class="section-title">Projects</h2>
+                <ul>
+                    <li>InverPrime: Advanced Pure Sine Wave Inverter Technology </li>
+                    <li>Smart Home Automation System using ARDUINO UNO</li>
+                </ul>
+            </section>
+
+            <section class="achievements">
+                <h2 class="section-title">Achievements</h2>
+                <ul>
+                    <li>'Student of The Year' Title</li>
+                    <li>'Top Project' Title in Departmental Project Fair</li>
+                </ul>
+            </section>
+
+            <section class="references">
+                <h2 class="section-title">References</h2>
+                <table>
+                    <tr>
+                        <th>Name</th>
+                        <th>Designation</th>
+                        <th>Contact</th>
+                    </tr>
+                    <tr>
+                        <td>Dr. Md. Kamal Hosain</td>
+                        <td>Professor</td>
+                        <td>+8801716-130151<br>kamaleteruet@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Dr. Mst. Fateha Samad</td>
+                        <td>Professor</td>
+                        <td>+8801796-382971<br>fatehasamad@ete.ruet.ac.bd</td>
+                    </tr>
+                </table>
+            </section>
+
+            <!-- Signature Section at the bottom right -->
+            <section class="signature">
+                <h2 class="section-title">Signature</h2>
+                <img src="Signature (Cursive).jpg" alt="Signature" class="signature-img">
+            </section>
+        </div>
+    </div>
+</body>
+</html>
