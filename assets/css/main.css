@@ -39,17 +39,36 @@
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
 
-.light-background {
-  --background-color: #e9e8e6;
-  --surface-color: #ffffff;
+.sitename .copyright{
+  color: #333; /* Set the color you want for the site name */
 }
 
+/* Social Media Links Color (Will stay the same in both light and dark modes) */
+.header-social-links a {
+  color: #333; /* Set the color you want for the social media links */
+}
+
+/* Navbar Links Color - Will stay the same in both light and dark modes */
+#navmenu a {
+  color: #333; /* Set the color you want for the navigation menu buttons */
+}
+
+/* Dark Mode Adjustments for General Elements */
 .dark-background {
-  --background-color: #060606;
+  --background-color: #252525;
   --default-color: #ffffff;
   --heading-color: #ffffff;
   --surface-color: #252525;
   --contrast-color: #ffffff;
+  --nav-dropdown-background-color:#464646;
+}
+
+/* Background color for the entire header in dark mode */
+
+
+/* Navbar Links Color in Dark Mode - Keep it same as light theme */
+.dark-background #navmenu a {
+  color: white; /* Ensure the nav links are same as in light mode */
 }
 
 /* Smooth scroll */
