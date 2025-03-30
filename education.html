@@ -34,43 +34,178 @@
   <header id="header" class="header d-flex align-items-center light-background sticky-top">
     <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1 class="sitename">Simon</h1>
-      </a>
+        <!-- Site Name -->
+        <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+            <h1 class="sitename">Simon</h1>
+        </a>
 
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="resume.html">Resume</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-          <li class="dropdown"><a href="#"><span class="active">More</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+        <!-- Theme Toggle Button -->
+        <div class="theme-toggle" style="position: relative; margin-right: 15px;">
+            <input type="checkbox" id="theme-toggle-checkbox">
+            <label for="theme-toggle-checkbox" class="toggle-label">
+                <span class="toggle-slider">
+                    <i class="bi bi-sun-fill sun-icon"></i>
+                    <i class="bi bi-moon-fill moon-icon"></i>
+                </span>
+            </label>
+        </div>
+
+        <!-- Navigation Menu -->
+        <nav id="navmenu" class="navmenu" style="margin-left: -350px;">
             <ul>
-              <li><a href="education.html" class="active">Education</a></li>
-              <li><a href="experiences.html">Experiences</a></li>
-              <li><a href="extracurricular.html">Extracurricular Activities</a></li>
-              <li><a href="hobbies-interest.html">Hobbies & Interests</a></li>
-              <li><a href="references.html">References</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li class="dropdown"><a href="#"><span class="active">More</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                    <ul>
+                        <li><a href="education.html" class="active">Education</a></li>
+                        <li><a href="experiences.html">Experiences</a></li>
+                        <li><a href="extracurricular.html">Extracurricular Activities</a></li>
+                        <li><a href="hobbies-interest.html">Hobbies & Interests</a></li>
+                        <li><a href="references.html">References</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
-          </li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
+            <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
 
-      <div class="header-social-links">
-        <a href="https://x.com/" class="twitter"><i class="bi bi-twitter-x"></i></a>
-        <a href="https://www.facebook.com/uwusimonuwu/" class="facebook"><i class="bi bi-facebook"></i></a>
-        <a href="https://www.instagram.com/" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="https://www.linkedin.com/" class="linkedin"><i class="bi bi-linkedin"></i></a>
-        <a href="https://github.com/simonislamsuvo/" class="github"><i class="bi bi-github"></i></a>
-      </div>
+        <!-- Social Media Links -->
+        <div class="header-social-links">
+            <a href="https://x.com/" class="twitter"><i class="bi bi-twitter-x"></i></a>
+            <a href="https://www.facebook.com/uwusimonuwu/" class="facebook"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/" class="instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.linkedin.com/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            <a href="https://github.com/simonislamsuvo/" class="github"><i class="bi bi-github"></i></a>
+        </div>
 
     </div>
-  </header>
+</header>
+
+<!-- Add Styles for Sliding Toggle -->
+<style>
+    /* Container for the theme toggle button */
+    /* Container for the theme toggle button */
+    .theme-toggle {
+    display: flex;
+    align-items: center;
+}
+
+/* Toggle Label */
+.toggle-label {
+    position: relative;
+    display: flex;
+    margin-left: -175px;
+    align-items: center;
+    width: 50px;
+    height: 25px;
+    background-color: lightgray; /* Light mode background color */
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.5s ease; /* Smoother transition for background */
+}
+
+/* Sliding Circle */
+.toggle-slider {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    top: 50%;
+    left: 3px;
+    transform: translateY(-50%);
+    transition: left 0.3s ease;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Sun & Moon Icons */
+.sun-icon, .moon-icon {
+    font-size: 16px; /* Adjust icon size */
+    color: #f39c12; /* Sun color */
+    transition: opacity 0.3s ease;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Position the icons inside the circle */
+.sun-icon {
+    left: 1.5px; /* Position the sun icon to the left side inside the circle */
+}
+
+.moon-icon {
+    right: 1.5px; /* Position the moon icon to the right side inside the circle */
+    opacity: 0; /* Initially hide the moon icon */
+}
+
+/* Toggle Active - Dark Mode */
+.theme-toggle input:checked + .toggle-label {
+    background-color: #4f4f4f; /* Dark mode background color */
+}
+
+.theme-toggle input:checked + .toggle-label .toggle-slider {
+    left: 27px; /* Move slider to the right in dark mode */
+}
+
+.theme-toggle input:checked + .toggle-label .sun-icon {
+    opacity: 0; /* Hide sun icon in dark mode */
+}
+
+.theme-toggle input:checked + .toggle-label .moon-icon {
+    opacity: 1; /* Show moon icon in dark mode */
+}
+
+/* Hide default checkbox */
+.theme-toggle input {
+    display: none;
+}
+</style>
+
+<!-- JavaScript for Theme Toggle -->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const toggleSwitch = document.getElementById('theme-toggle-checkbox');
+        const body = document.body;
+        const sunIcon = document.querySelector('.sun-icon');
+        const moonIcon = document.querySelector('.moon-icon');
+
+        // Load saved theme preference
+        if (localStorage.getItem('theme') === 'dark') {
+            body.classList.add('dark-background');
+            body.classList.remove('light-background');
+            toggleSwitch.checked = true;
+            sunIcon.style.opacity = 0;
+            moonIcon.style.opacity = 1;
+        } else {
+            body.classList.add('light-background');
+            body.classList.remove('dark-background');
+            sunIcon.style.opacity = 1;
+            moonIcon.style.opacity = 0;
+        }
+
+        toggleSwitch.addEventListener('change', () => {
+            if (toggleSwitch.checked) {
+                body.classList.add('dark-background');
+                body.classList.remove('light-background');
+                localStorage.setItem('theme', 'dark');
+                sunIcon.style.opacity = 0;
+                moonIcon.style.opacity = 1;
+            } else {
+                body.classList.add('light-background');
+                body.classList.remove('dark-background');
+                localStorage.setItem('theme', 'light');
+                sunIcon.style.opacity = 1;
+                moonIcon.style.opacity = 0;
+            }
+        });
+    });
+</script>
 
   <main class="main">
     <section id="resume" class="resume section">
@@ -81,7 +216,7 @@
             <div class="col-lg-8 text-left" data-aos="fade-up" data-aos-delay="100">
 
                 <div class="resume-item">
-                    <h4 style="color: black;">Bachelor of Science (Engineering)</h4>
+                    <h4><b>Bachelor of Science (Engineering)</b></h4>
                     <p><em>Passing year: 2021 - Present</em></p>
                     <p><em>Rajshahi University of Engineering and Technology,Rajshahi</em></p>
                     <p>Passionate about electronics and telecommunications, my university life at RUET has been a journey of innovation 
@@ -90,7 +225,7 @@
                 </div><!-- End Resume Item -->
 
                 <div class="resume-item">
-                    <h4 style="color: black;">Higher Secondary Certificate</h4>
+                    <h4><b>Higher Secondary Certificate</b></h4>
                     <p><em>Passing year: 2021</em></p>
                     <p><em>Cantonment College Jahsore</em></p>
                     <p>My college life was a period of growth and exploration, where I built a strong foundation in science and 
@@ -99,7 +234,7 @@
                 </div><!-- End Resume Item -->
 
                 <div class="resume-item">
-                  <h4 style="color: black;">Secondary School Certificate</h4>
+                  <h4><b>Secondary School Certificate</b></h4>
                   <p><em>Passing year: 2019</em></p>
                   <p><em>Police Line Secondary School, Jashore</em></p>
                   <p>My school life was the beginning of my academic journey, where I developed a love for learning and a strong work 
