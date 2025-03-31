@@ -167,10 +167,11 @@
 }
 
   .experience-card {
+    background: var(--surface-color, #fff); 
+    color: var(--default-color, #333); 
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    background: #fff;
 }
 
 .experience-card:hover {
@@ -178,16 +179,37 @@
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
+/* Dark Mode */
+.dark-background .experience-card {
+    background: var(--background-color, #252525); 
+    color: var(--contrast-color, #ffffff);
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1); /* Softer shadow in dark mode */
+}
+
+.dark-background .experience-card:hover {
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
+}
+
+/* Card Title Styling */
 .card-title {
     font-size: 1.5em;
     font-weight: bold;
-    color: #333;
+    color: var(--heading-color, #333);
+}
+
+/* Adjust Text in Dark Mode */
+.dark-background .card-title {
+    color: var(--contrast-color, #ffffff);
 }
 
 .card-text {
     font-size: 1.1em;
-    color: #555;
+    color: var(--default-color, #555);
     line-height: 1.5;
+}
+
+.dark-background .card-text {
+    color: var(--contrast-color, #ffffff);
 }
 
 @media (max-width: 768px) {
