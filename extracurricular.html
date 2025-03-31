@@ -165,6 +165,59 @@
 .theme-toggle input {
     display: none;
 }
+
+
+  .experience-card {
+    background: var(--surface-color, #fff); 
+    color: var(--default-color, #333); 
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.experience-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Dark Mode */
+.dark-background .experience-card {
+    background: var(--background-color, #252525); 
+    color: var(--contrast-color, #ffffff);
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1); /* Softer shadow in dark mode */
+}
+
+.dark-background .experience-card:hover {
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
+}
+
+/* Card Title Styling */
+.card-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: var(--heading-color, #333);
+}
+
+/* Adjust Text in Dark Mode */
+.dark-background .card-title {
+    color: var(--contrast-color, #ffffff);
+}
+
+.card-text {
+    font-size: 1.1em;
+    color: var(--default-color, #555);
+    line-height: 1.5;
+}
+
+.dark-background .card-text {
+    color: var(--contrast-color, #ffffff);
+}
+
+@media (max-width: 768px) {
+    .experience-card {
+        margin-bottom: 20px;
+    }
+}
 </style>
 
 <!-- JavaScript for Theme Toggle -->
@@ -209,21 +262,54 @@
 
   <main class="main">
     <section id="resume" class="resume section">
-        <div class="container section-title" data-aos="fade-up">
-            <h2>Extracurricular Activities</h2>
-        </div><!-- End Section Title -->
-        <div class="container d-flex justify-content-center">
-            <div class="col-lg-8 text-left" data-aos="fade-up" data-aos-delay="100">
-                <ul style="font-size: 1.2em;">
-                  <li><b>Cricketer</b> – Played as a fast bowler for my school team, competing in tournaments and honing my skills in pace bowling, strategy, and teamwork.</li>
-                  <li><b>Handball Player</b> – ARepresented my school as a right winger in handball, utilizing speed and precision to contribute to the team’s success in competitions.</li>
-                  <li><b>School Athletics Champion</b> - Won titles in long jump, shot put, and soccer throw, excelling in track and field events that tested strength, technique, and precision.</li>
-                  <li><b>Biology Olympiad Regional Runner-up</b> – Placed as a runner-up in the regional Biology Olympiad, applying analytical skills to solve complex biological problems and competing with top students.</li>
-                  <li><b>Class Representative</b> - Acted as a bridge between students and faculty, ensuring smooth communication, resolving academic concerns, and organizing discussions. It strengthened my leadership and problem-solving skills.</li>
-                </ul>
+    <div class="container section-title" data-aos="fade-up">
+        <h2>Extracurricular Activities</h2>
+    </div><!-- End Section Title -->
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <div class="card experience-card" data-aos="zoom-in">
+                    <div class="card-body">
+                        <h3 class="card-title">Cricketer</h3>
+                        <p class="card-text">Played as a fast bowler for my school team, competing in tournaments and honing my skills in pace bowling, strategy, and teamwork.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card experience-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="card-body">
+                        <h3 class="card-title">Handball Player</h3>
+                        <p class="card-text">Represented my school as a right winger in handball, utilizing speed and precision to contribute to the team’s success in competitions.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card experience-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="card-body">
+                        <h3 class="card-title">School Athletics Champion</h3>
+                        <p class="card-text">Won titles in long jump, shot put, and soccer throw, excelling in track and field events that tested strength, technique, and precision.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card experience-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="card-body">
+                        <h3 class="card-title">Biology Olympiad Regional Runner-up</h3>
+                        <p class="card-text">Placed as a runner-up in the regional Biology Olympiad, applying analytical skills to solve complex biological problems and competing with top students.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card experience-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="card-body">
+                        <h3 class="card-title">Class Representative</h3>
+                        <p class="card-text">Acted as a bridge between students and faculty, ensuring smooth communication, resolving academic concerns, and organizing discussions. It strengthened my leadership and problem-solving skills.</p>
+                    </div>
+                </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
   </main>
 
   <footer id="footer" class="footer light-background">
