@@ -165,6 +165,36 @@
 .theme-toggle input {
     display: none;
 }
+
+  .experience-card {
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    background: #fff;
+}
+
+.experience-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+}
+
+.card-text {
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    .experience-card {
+        margin-bottom: 20px;
+    }
+}
 </style>
 
 <!-- JavaScript for Theme Toggle -->
@@ -207,29 +237,6 @@
     });
 </script>
 
-  .experience-card {
-    margin-bottom: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-}
-
-.experience-card:hover {
-    transform: scale(1.03);
-}
-
-.card-title {
-    font-size: 1.5em;
-    font-weight: bold;
-    color: #333;
-}
-
-.card-text {
-    font-size: 1.2em;
-    color: #555;
-    line-height: 1.5;
-}
-
   <main class="main">
     <section id="resume" class="resume section">
     <div class="container section-title" data-aos="fade-up">
@@ -237,31 +244,27 @@
     </div><!-- End Section Title -->
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-lg-8" data-aos="fade-up" data-aos-delay="100">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="card experience-card">
-                            <div class="card-body">
-                                <h3 class="card-title">Class Representative</h3>
-                                <p class="card-text">Acted as a bridge between students and faculty, facilitating communication, resolving academic concerns, and organizing meetings. This role strengthened my leadership and problem-solving skills.</p>
-                            </div>
-                        </div>
+            <div class="col-md-4">
+                <div class="card experience-card" data-aos="zoom-in">
+                    <div class="card-body">
+                        <h3 class="card-title">Class Representative</h3>
+                        <p class="card-text">Acted as a bridge between students and faculty, facilitating communication, resolving academic concerns, and organizing meetings. Strengthened my leadership and problem-solving skills.</p>
                     </div>
-                    <div class="col-md-12">
-                        <div class="card experience-card">
-                            <div class="card-body">
-                                <h3 class="card-title">University Program Volunteer</h3>
-                                <p class="card-text">Assisted in organizing university events, managing logistics, and guiding participants, enhancing my teamwork, event management, and coordination abilities.</p>
-                            </div>
-                        </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card experience-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="card-body">
+                        <h3 class="card-title">University Program Volunteer</h3>
+                        <p class="card-text">Assisted in organizing university events, managing logistics, and guiding participants, enhancing my teamwork, event management, and coordination abilities.</p>
                     </div>
-                    <div class="col-md-12">
-                        <div class="card experience-card">
-                            <div class="card-body">
-                                <h3 class="card-title">Part-time Tutor</h3>
-                                <p class="card-text">Provided academic support in subjects like mathematics and physics, improving students' understanding while developing my teaching, communication, and patience.</p>
-                            </div>
-                        </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card experience-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="card-body">
+                        <h3 class="card-title">Part-time Tutor</h3>
+                        <p class="card-text">Provided academic support in subjects like mathematics and physics, improving students' understanding while developing my teaching, communication, and patience.</p>
                     </div>
                 </div>
             </div>
