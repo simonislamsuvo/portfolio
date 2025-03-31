@@ -207,20 +207,27 @@
     });
 </script>
 
-  .experience-item {
+  .experience-card {
     margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
 }
 
-.experience-item h3 {
+.experience-card:hover {
+    transform: scale(1.03);
+}
+
+.card-title {
     font-size: 1.5em;
-    margin-bottom: 10px;
-    color: #333; /* Adjust color as needed */
+    font-weight: bold;
+    color: #333;
 }
 
-.experience-item p {
+.card-text {
     font-size: 1.2em;
-    line-height: 1.6;
-    color: #666; /* Adjust color as needed */
+    color: #555;
+    line-height: 1.5;
 }
 
   <main class="main">
@@ -229,19 +236,33 @@
         <h2>Experiences</h2>
     </div><!-- End Section Title -->
     <div class="container">
-        <div class="row">
+        <div class="row justify-content-center">
             <div class="col-lg-8" data-aos="fade-up" data-aos-delay="100">
-                <div class="experience-item">
-                    <h3>Class Representative</h3>
-                    <p>Acted as a bridge between students and faculty, facilitating communication, resolving academic concerns, and organizing meetings. This role strengthened my leadership and problem-solving skills.</p>
-                </div>
-                <div class="experience-item">
-                    <h3>University Program Volunteer</h3>
-                    <p>Assisted in organizing university events, managing logistics, and guiding participants, enhancing my teamwork, event management, and coordination abilities.</p>
-                </div>
-                <div class="experience-item">
-                    <h3>Part-time Tutor</h3>
-                    <p>Provided academic support in subjects like mathematics and physics, improving students' understanding while developing my teaching, communication, and patience.</p>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card experience-card">
+                            <div class="card-body">
+                                <h3 class="card-title">Class Representative</h3>
+                                <p class="card-text">Acted as a bridge between students and faculty, facilitating communication, resolving academic concerns, and organizing meetings. This role strengthened my leadership and problem-solving skills.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="card experience-card">
+                            <div class="card-body">
+                                <h3 class="card-title">University Program Volunteer</h3>
+                                <p class="card-text">Assisted in organizing university events, managing logistics, and guiding participants, enhancing my teamwork, event management, and coordination abilities.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="card experience-card">
+                            <div class="card-body">
+                                <h3 class="card-title">Part-time Tutor</h3>
+                                <p class="card-text">Provided academic support in subjects like mathematics and physics, improving students' understanding while developing my teaching, communication, and patience.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
