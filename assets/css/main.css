@@ -632,7 +632,7 @@ h6 {
   }
 
   .theme-toggle input:checked + .toggle-label .toggle-slider {
-    left: 23px; /* Move slider to the right in dark mode */
+    left: 22px; /* Move slider to the right in dark mode */
   }
 
   .theme-toggle input:checked + .toggle-label .sun-icon {
