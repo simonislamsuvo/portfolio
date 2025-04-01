@@ -175,41 +175,45 @@
 
   });
 
-  document.addEventListener('DOMContentLoaded', function () {
-    const toggleSwitch = document.getElementById('theme-toggle-checkbox');
-    const body = document.body;
-    const sunIcon = document.querySelector('.sun-icon');
-    const moonIcon = document.querySelector('.moon-icon');
 
-    // Load saved theme preference
-    if (localStorage.getItem('theme') === 'dark') {
-        body.classList.add('dark-background');
-        body.classList.remove('light-background');
-        toggleSwitch.checked = true;
-        sunIcon.style.opacity = 0;
-        moonIcon.style.opacity = 1;
-    } else {
-        body.classList.add('light-background');
-        body.classList.remove('dark-background');
-        sunIcon.style.opacity = 1;
-        moonIcon.style.opacity = 0;
-    }
+/**
+   * Toggle
+   */
+document.addEventListener('DOMContentLoaded', function () {
+        const toggleSwitch = document.getElementById('theme-toggle-checkbox');
+        const body = document.body;
+        const sunIcon = document.querySelector('.sun-icon');
+        const moonIcon = document.querySelector('.moon-icon');
 
-    toggleSwitch.addEventListener('change', () => {
-        if (toggleSwitch.checked) {
+        // Load saved theme preference
+        if (localStorage.getItem('theme') === 'dark') {
             body.classList.add('dark-background');
             body.classList.remove('light-background');
-            localStorage.setItem('theme', 'dark');
+            toggleSwitch.checked = true;
             sunIcon.style.opacity = 0;
             moonIcon.style.opacity = 1;
         } else {
             body.classList.add('light-background');
             body.classList.remove('dark-background');
-            localStorage.setItem('theme', 'light');
             sunIcon.style.opacity = 1;
             moonIcon.style.opacity = 0;
         }
+
+        toggleSwitch.addEventListener('change', () => {
+            if (toggleSwitch.checked) {
+                body.classList.add('dark-background');
+                body.classList.remove('light-background');
+                localStorage.setItem('theme', 'dark');
+                sunIcon.style.opacity = 0;
+                moonIcon.style.opacity = 1;
+            } else {
+                body.classList.add('light-background');
+                body.classList.remove('dark-background');
+                localStorage.setItem('theme', 'light');
+                sunIcon.style.opacity = 1;
+                moonIcon.style.opacity = 0;
+            }
+        });
     });
-});
 
 })();
