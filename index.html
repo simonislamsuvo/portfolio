@@ -135,7 +135,7 @@
         <div class="row justify-content-center">
             <div class="col-lg-8">
                 <div class="blur-box">
-                    <h2 style="color: black;">Md. Simon Islam Suvo</h2>
+                    <h2 style="color: black; siz">Md. Simon Islam Suvo</h2>
                     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
                     <style>
                         .typed-cursor {
@@ -148,6 +148,19 @@
                         .string_color {
                             color: #34b7a7;
                         }
+                        .blur-box h2 {
+                            font-size: clamp(20px, 5vw, 40px); /* Default for larger screens */
+                            color: black;
+                            text-align: center;
+                            white-space: nowrap;
+                       }
+
+                                /* Adjust font size for smaller screens (phones) */
+                       @media (max-width: 768px) {
+                       .blur-box h2 {
+                           font-size: clamp(16px, 4vw, 28px); /* Smaller on mobile */
+                          }
+                       }
                         .blur-box {
                             background: rgba(255, 255, 255, 0.2);
                             backdrop-filter: blur(3px);
