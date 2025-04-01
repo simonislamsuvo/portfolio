@@ -56,6 +56,7 @@
 /* Dark Mode Adjustments for General Elements */
 .dark-background {
   --background-color: #252525;
+  --nav-mobile-background-color: #ffffff;
   --default-color: #ffffff;
   --heading-color: #ffffff;
   --surface-color: #252525;
