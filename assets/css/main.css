@@ -581,7 +581,7 @@ h6 {
     display: flex;
     margin-left: -175px;
     align-items: center;
-    width: 50px;
+    width: 40px;
     height: 20px;
     background-color: #34b7a7; /* Light mode background color */
     border-radius: 25px;
@@ -608,7 +608,7 @@ h6 {
 
   /* Sun & Moon Icons */
   .sun-icon, .moon-icon {
-    font-size: 16px; /* Adjust icon size */
+    font-size: 8px; /* Adjust icon size */
     color: #f39c12; /* Sun color */
     transition: opacity 0.3s ease;
     position: absolute;
