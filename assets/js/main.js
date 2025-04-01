@@ -1,11 +1,3 @@
-/**
-* Template Name: Kelly
-* Template URL: https://bootstrapmade.com/kelly-free-bootstrap-cv-resume-html-template/
-* Updated: Aug 07 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
 (function() {
   "use strict";
 
@@ -182,44 +174,5 @@
     });
 
   });
-
-  /**
-   * Toggle Script
-   */
-   document.addEventListener('DOMContentLoaded', function () {
-    const toggleSwitch = document.getElementById('theme-toggle-checkbox');
-    const body = document.body;
-    const sunIcon = document.querySelector('.sun-icon');
-    const moonIcon = document.querySelector('.moon-icon');
-
-    // Load saved theme preference
-    if (localStorage.getItem('theme') === 'dark') {
-        body.classList.add('dark-background');
-        body.classList.remove('light-background');
-        toggleSwitch.checked = true;
-        sunIcon.style.opacity = 0;
-        moonIcon.style.opacity = 1;
-    } else {
-        body.classList.add('light-background');
-        body.classList.remove('dark-background');
-        sunIcon.style.opacity = 1;
-        moonIcon.style.opacity = 0;
-    }
-
-    toggleSwitch.addEventListener('change', () => {
-        if (toggleSwitch.checked) {
-            body.classList.add('dark-background');
-            body.classList.remove('light-background');
-            localStorage.setItem('theme', 'dark');
-            sunIcon.style.opacity = 0;
-            moonIcon.style.opacity = 1;
-        } else {
-            body.classList.add('light-background');
-            body.classList.remove('dark-background');
-            localStorage.setItem('theme', 'light');
-            sunIcon.style.opacity = 1;
-            moonIcon.style.opacity = 0;
-        }
-    });
 
 })();
