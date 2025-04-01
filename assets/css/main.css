@@ -884,11 +884,16 @@ section,
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center; /* Default center alignment */
 }
 
 @media (max-width: 1200px) {
   .hero {
     min-height: calc(100vh - 68px);
+    align-items: flex-start; /* Align content to the top */
+    justify-content: flex-start; /* Move content to the left */
+    padding-left: 20px; /* Add some left padding */
+    text-align: left; /* Ensure text aligns left */
   }
 }
 
@@ -940,7 +945,7 @@ section,
 
 @media (max-width: 768px) {
   .hero h2 {
-    font-size: 32px;
+    font-size: 24px;
   }
 
   .hero p {
