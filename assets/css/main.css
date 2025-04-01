@@ -48,12 +48,14 @@
 /* Dark Mode Adjustments for General Elements */
 .dark-background {
   --background-color: #252525;
+  --nav-color: #ffffff;
   --nav-mobile-background-color: #252525;
+  --nav-dropdown-color: ##464646;
   --default-color: #ffffff;
   --heading-color: #ffffff;
   --surface-color: #252525;
   --contrast-color: #ffffff;
-  --nav-dropdown-background-color:#464646;
+  --nav-dropdown-background-color: #ffffff;
 }
 
 /* Background color for the entire header in dark mode */
