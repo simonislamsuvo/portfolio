@@ -90,9 +90,11 @@
     /* Container for the theme toggle button */
     /* Container for the theme toggle button */
     .theme-toggle {
-    display: flex;
-    align-items: center;
-}
+      position: absolute;  /* Allows precise positioning */
+      top: 10px;           /* Adjust this value to move up/down */
+      right: 200px;         /* Adjust this value to move left/right */
+      z-index: 1000;       /* Ensures it stays above other elements */
+  }
 
 /* Toggle Label */
 .toggle-label {
