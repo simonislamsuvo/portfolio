@@ -534,7 +534,7 @@ h6 {
     z-index: 99;
     padding: 10px 0;
     margin: 10px 20px;
-    background-color: var(--nav-dropdown-background-color);
+    background-color: var(--background-color);
     transition: all 0.5s ease-in-out;
   }
 
