@@ -608,7 +608,7 @@ h6 {
 
   /* Sun & Moon Icons */
   .sun-icon, .moon-icon {
-    font-size: 8px; /* Adjust icon size */
+    font-size: 12px; /* Adjust icon size */
     color: #f39c12; /* Sun color */
     transition: opacity 0.3s ease;
     position: absolute;
@@ -632,7 +632,7 @@ h6 {
   }
 
   .theme-toggle input:checked + .toggle-label .toggle-slider {
-    left: 27px; /* Move slider to the right in dark mode */
+    left: 23px; /* Move slider to the right in dark mode */
   }
 
   .theme-toggle input:checked + .toggle-label .sun-icon {
