@@ -303,7 +303,7 @@ h6 {
   .navmenu .dropdown ul {
     margin: 0;
     padding: 10px 0;
-    background: var(--nav-dropdown-background-color);
+    background: var(--nav-mobile-background-color);
     display: block;
     position: absolute;
     visibility: hidden;
