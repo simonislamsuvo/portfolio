@@ -48,8 +48,9 @@
 /* Dark Mode Adjustments for General Elements */
 .dark-background {
   --background-color: #252525;
-  --nav-dropdown-hover-color: #ffffff;
+  --nav-dropdown-hover-color: #34b7a7;
   --nav-color: #ffffff;
+  --nav-hover-color: #34b7a7;
   --nav-mobile-background-color: #252525;
   --nav-dropdown-background-color: #444444;
   --nav-dropdown-color: #252525;
