@@ -50,7 +50,7 @@
   --background-color: #252525;
   --nav-color: #ffffff;
   --nav-mobile-background-color: #252525;
-  --nav-dropdown-background-color: #4444444;
+  --nav-dropdown-background-color: #444444;
   --nav-dropdown-color: #252525;
   --default-color: #ffffff;
   --heading-color: #ffffff;
@@ -303,7 +303,7 @@ h6 {
   .navmenu .dropdown ul {
     margin: 0;
     padding: 10px 0;
-    background: var(--nav-mobile-background-color);
+    background: var(--nav-dropdown-background-color);
     display: block;
     position: absolute;
     visibility: hidden;
