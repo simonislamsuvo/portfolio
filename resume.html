@@ -124,24 +124,53 @@
     });
 </script>
 
-  <main class="main">
+  <style>
+    .iframe-wrapper {
+      overflow: hidden;
+    }
+  
+    @media (max-width: 420px) {
+      .iframe-wrapper {
+        width: 100%;
+        overflow: auto;
+      }
+  
+      #cv-iframe {
+        width: 1200px; /* keep iframe width larger to force horizontal scroll */
+        height: 1530px;
+      }
+    }
+  </style>
 
+
+  <main class="main">
     <!-- Resume Section -->
     <section id="resume" class="resume section">
-            <div class="container section-title" data-aos="fade-up">
-              <h2>Resume</h2>
-              <p>Explore my academic and professional journey, highlighting my skills, experiences, and achievements in electronics, IoT, and web development.</p>
-            </div>
-            
-            <!-- Embed another HTML file -->
-            <div class="container">
-              <iframe src="assets\CV\SIMON_CV.html" width="100%" height="1500px" style="border: none; outline: none; margin: 0; padding: 0;"></iframe>
-              <div style="text-align: center; margin-top: 20px;">
-                  <a href="assets\CV\SimonCV.pdf" download class="btn btn-primary" style="background-color: #34b7a7; border: none; outline: none; color: white;">Download Resume</a>
-              </div>
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Resume</h2>
+          <p>Explore my academic and professional journey, highlighting my skills, experiences, and achievements in electronics, IoT, and web development.</p>
+        </div>
+      
+        <!-- Embed another HTML file -->
+        <div class="container">
+          <!-- Scroll wrapper for small screens -->
+          <div class="iframe-wrapper">
+            <iframe src="assets/CV/SIMON_CV.html"
+                    width="100%"
+                    height="1500px"
+                    style="border: none; outline: none; margin: 0; padding: 0;"
+                    id="cv-iframe"></iframe>
           </div>
-    </section><!-- /Resume Section -->
-
+      
+          <!-- Download button -->
+          <div style="text-align: center; margin-top: 20px;">
+            <a href="assets/CV/SimonCV.pdf" download class="btn btn-primary"
+               style="background-color: #34b7a7; border: none; outline: none; color: white;">
+              Download Resume
+            </a>
+          </div>
+        </div>
+      </section>
   </main>
 
   <footer id="footer" class="footer light-background">
