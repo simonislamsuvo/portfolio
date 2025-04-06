@@ -21,7 +21,7 @@
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
-  --nav-color: #333333;  /* The default color of the main navmenu links */
+  --nav-color: #222222;  /* The default color of the main navmenu links */
   --nav-hover-color: #34b7a7; /* Applied to main navmenu links when they are hovered over or active */
   --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
   --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
@@ -40,11 +40,6 @@
   color: #333; /* Set the color you want for the social media links */
 }
 
-/* Navbar Links Color - Will stay the same in both light and dark modes */
-#navmenu a {
-  color: #333; /* Set the color you want for the navigation menu buttons */
-}
-
 /* Dark Mode Adjustments for General Elements */
 .dark-background {
   --background-color: #252525;
@@ -59,15 +54,9 @@
   --surface-color: #252525;
   --contrast-color: #ffffff;
   --accent-color: #34b7a7;
+  --nav-color: #ffffff;
 }
 
-/* Background color for the entire header in dark mode */
-
-
-/* Navbar Links Color in Dark Mode - Keep it same as light theme */
-.dark-background #navmenu a {
-  color: white; /* Ensure the nav links are same as in light mode */
-}
 
 /* Smooth scroll */
 :root {
