@@ -438,7 +438,7 @@ h6 {
 /* Mobile Navigation */
 @media (max-width: 1199px) {
   .mobile-nav-toggle {
-    color: var( --nav-color);
+    color: var(--default-color);
     font-size: 28px;
     line-height: 0;
     margin-right: 10px;
@@ -469,7 +469,7 @@ h6 {
 
   .navmenu a,
   .navmenu a:focus {
-    color: var( --nav-color);
+    color: var(--nav-color);
     padding: 10px 20px;
     font-family: var(--nav-font);
     font-size: 17px;
