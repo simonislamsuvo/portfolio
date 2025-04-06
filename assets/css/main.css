@@ -691,7 +691,7 @@ h6 {
 # Preloader
 --------------------------------------------------------------*/
 #preloader {
-  position: fixed;
+  position: absolute;
   inset: 0;
   z-index: 9999;
   overflow: hidden;
