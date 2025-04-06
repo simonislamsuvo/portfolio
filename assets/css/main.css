@@ -46,7 +46,7 @@
   --nav-dropdown-hover-color: #34b7a7;
   --nav-color: #ffffff;
   --nav-hover-color: #34b7a7;
-  --nav-mobile-background-color: #252525;
+  --nav-mobile-background-color: rgba(81, 88, 95, 0.1);
   --nav-dropdown-background-color: #444444;
   --nav-dropdown-color: #252525;
   --default-color: #ffffff;
@@ -459,7 +459,7 @@ h6 {
     padding: 10px 0;
     margin: 0;
     border-radius: 6px;
-    background-color: var(--nav-mobile-background-color);
+    background-color: var(--background-color);
     border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
     box-shadow: none;
     overflow-y: auto;
@@ -521,7 +521,7 @@ h6 {
     z-index: 99;
     padding: 10px 0;
     margin: 10px 20px;
-    background-color: var(--nav-dropdown-background-color);
+    background-color: var(--background-color);
     transition: all 0.5s ease-in-out;
   }
 
@@ -531,7 +531,7 @@ h6 {
 
   .navmenu .dropdown>.dropdown-active {
     display: block;
-    background-color: rgba(33, 37, 41, 0.03);
+    background-color: var(--nav-mobile-background-color);
   }
 
   .mobile-nav-active {
