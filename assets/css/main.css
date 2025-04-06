@@ -17,6 +17,8 @@
   --accent-color: #34b7a7; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+  --border-color: #a1a1a1;
+  --table-cell-color: #fbfbfb; 
 }
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
@@ -55,6 +57,8 @@
   --contrast-color: #ffffff;
   --accent-color: #34b7a7;
   --nav-color: #ffffff;
+  --border-color: #a3a3a3;
+  --table-cell-color: #373737;
 }
 
 
