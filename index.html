@@ -137,7 +137,9 @@
         <div class="row justify-content-center">
             <div class="col-lg-8">
                 <div class="blur-box">
-                    <h2 style="color: black;">Md. Simon Islam Suvo</h2>
+                    <h2 style="color: #34b7a7; -webkit-text-stroke: 1px rgb(19, 19, 19);">
+                        Md. Simon Islam Suvo
+                    </h2>
                     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
                     <style>
                         .typed-cursor {
@@ -152,26 +154,45 @@
                         }
                         .blur-box {
                             background: rgba(255, 255, 255, 0.2);
-                            backdrop-filter: blur(3px);
+                            backdrop-filter: blur(5px);
                             padding: 10px;
                             border-radius: 20px;
                             display: block;
-                            width: 80%; /* You can adjust this value */
-                            height: 200px; /* You can adjust this value */
+                            width: 85%; /* You can adjust this value */
+                            height: 75%; /* You can adjust this value */
                             margin: 0 auto; /* Centers the box */
                         }
                         .btn-get-started {
                             display: inline-block;
                             margin-top: 5px;
-                            padding: 5px 5px;
+                            padding: 10px 20px;
                             color: white;
                             background-color: #34b7a7;
                             border-radius: 10px;
                             text-decoration: none;
                             transition: 0.3s;
+                            margin-right: 10px; /* Space between buttons in larger screens */
                         }
+
                         .btn-get-started:hover {
                             background-color: #2a9b8d;
+                        }
+                        @media (max-width: 412px) {
+                           .blur-box {
+                              height: 120px; /* Fixed height for smaller screens */
+                              min-height: 120px; /* Optional: Ensures the box doesn’t shrink smaller than this */
+                            }
+                            .container {
+                                display: flex;
+                                flex-direction: column; /* Stack the buttons vertically */
+                                align-items: center; /* Align buttons in the center */
+                                justify-content: center; /* Center the buttons vertically */
+                            }
+
+                            .btn-get-started {
+                                width: auto; /* Make buttons take full width on small screens */
+                                margin-top: 10px; /* Add spacing between the buttons */
+                            }
                         }
                     </style>
     
@@ -179,25 +200,24 @@
                     <script>
                         var typed = new Typed("#typed", {
                             strings: [
-                                '<span class="string_color">STUDENT</span>, curious, dedicated, always learning.',
-                                '<span class="string_color">LEARNER</span>, always seeking knowledge and growth.',
-                                '<span class="string_color">AMBITIOUS</span>, driven by passion to achieve greatness.',
-                                '<span class="string_color">DETERMINED</span>, never gives up, stays focused.'
+                                '<span class="string_color"><strong>STUDENT</strong></span>, curious, dedicated, always learning.',
+                                '<span class="string_color"><strong>LEARNER</strong></span>, always seeking knowledge and growth.',
+                                '<span class="string_color"><strong>AMBITIOUS</strong></span>, driven by passion to achieve greatness.',
+                                '<span class="string_color"><strong>DETERMINED</strong></span>, never gives up, stays focused.'
                             ],
                             typeSpeed: 50,
                             backSpeed: 25,
                             backDelay: 1000,
                             loop: true
                         });
-                    </script>
-                    <a href="about.html" class="btn-get-started">About Me</a>
+                    </script>             
                 </div>
+                    <a href="about.html" class="btn-get-started">About Me</a>
+                    <a href="assets/CV/SimonCV.pdf" class="btn-get-started">Download Resume</a>
             </div>
         </div>
       </div>
-
-    </section><!-- /Hero Section -->
-
+    </section><!-- /Hero Section -->  
   </main>
 
   <footer id="footer" class="footer light-background">
